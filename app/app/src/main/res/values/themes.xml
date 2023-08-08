@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TradiesOnClicK" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/design_default_color_background</item>-->
+    </style>
+
+    <style name="Theme.TradiesOnClicK" parent="Base.Theme.TradiesOnClicK" />
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+
+        <!-- Other attributes for the button style -->
+    </style>
+    <style name="SmallRatingBar" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="android:scaleX">0.5</item> <!-- Change the scale value as per your desired size -->
+        <item name="android:scaleY">0.5</item>
+    </style>
+    <style name="VerySmallRatingBar" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="android:scaleX">0.3</item> <!-- Change the scale value as per your desired size -->
+        <item name="android:scaleY">0.3</item>
+    </style>
+
+</resources>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingPage"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="417dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="613dp"
+        android:background="@drawable/top_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="119dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/l" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="TradiesOnClick"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="371dp"
+                    android:layout_height="256dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:elevation="8dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/propic"
+                            android:layout_width="104dp"
+                            android:layout_height="94dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/pro2" />
+
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="-10dp"
+                            app:srcCompat="@drawable/baseline_location_on_24" />
+
+                        <TextView
+                            android:id="@+id/add_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="172dp"
+                            android:layout_marginTop="-20dp"
+                            android:text="Address"
+                            android:textColor="#0B0B0B" />
+
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/baseline_smartphone_24" />
+
+                        <TextView
+                            android:id="@+id/phone_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="172dp"
+                            android:layout_marginTop="-20dp"
+                            android:text="Phone"
+                            android:textColor="#0B0B0B" />
+
+
+                        <Button
+                            android:id="@+id/request_work_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="60dp"
+                            android:text="Sent Work Request" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-150dp"
+                            android:text="Charge" />
+
+                        <TextView
+                            android:id="@+id/name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="-110dp"
+                            android:text="Name"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            style="@style/SmallRatingBar"
+                            android:id="@+id/star_avg"
+                            android:layout_width="239dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="85dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Rs. per work"
+                            android:textColor="#151414" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="371dp"
+                    android:layout_height="131dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFFFF"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:elevation="8dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="About "
+                            android:textColor="#090909"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="A well experienced plumber who have completed over 100 works in the muncipality. TRusted worker in the TradiesOnClick App"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="467dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/customer_reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_one"
+        layout="@layout/activity_bottom_navigation"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

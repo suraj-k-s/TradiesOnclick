@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TradiesOnClicK</string>
+    <string name="a_desc">Plumber
+Skilled plumber with experience over 15 years. Works are completed time-bounded.Resides in Karakkunna
+Rating:</string>
+    <string name="b_desc">Welder
+Welder with 10 year experience
+Rating:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

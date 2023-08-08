@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7FFFFFF"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="142dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/pro2" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-110dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Tradesman A"
+                android:textColor="#131313"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:text="Welder"
+                android:textColor="#0C0C0C" />
+
+            <Button
+                android:id="@+id/detailsButton"
+                android:layout_width="119dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="40dp"
+                android:background="#C3C0C0"
+                android:text="Details" />
+
+            <TextView
+                android:id="@+id/chargeTextView"
+                android:layout_width="64dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="-30dp"
+                android:text="Charge" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

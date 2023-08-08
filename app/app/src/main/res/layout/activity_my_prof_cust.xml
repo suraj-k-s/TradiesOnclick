@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfCust"
+    android:background="#ffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="544dp"
+        android:background="@drawable/top_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/name_pro"
+            android:layout_width="183dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Densy Sunny"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.838" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:background="#6A1B9A"
+            android:text="Logout"
+            app:layout_constraintBottom_toTopOf="@+id/name_pro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="372dp"
+        android:layout_height="441dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="0.131">
+
+
+        <TextView
+            android:id="@+id/local_place_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="157dp"
+            android:layout_marginEnd="157dp"
+            android:layout_marginBottom="414dp"
+            android:text="Local Place"
+            android:textColor="#100F0F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/local_place_pro"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/date_img"
+                android:layout_width="56dp"
+                android:layout_height="38dp"
+                app:srcCompat="@drawable/baseline_smartphone_24" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="228dp"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="123456789"
+                android:textColor="#131212" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/local_place_pro"
+            app:layout_constraintVertical_bias="0.235">
+
+            <ImageView
+                android:id="@+id/email_image"
+                android:layout_width="58dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/baseline_email_24" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="228dp"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="Email"
+                android:textColor="#131212" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/local_place_pro"
+            app:layout_constraintVertical_bias="0.48">
+
+            <ImageView
+                android:id="@+id/address_image"
+                android:layout_width="60dp"
+                android:layout_height="37dp"
+               app:srcCompat="@drawable/baseline_home_24" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                android:layout_width="228dp"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="#131212" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/local_place_pro"
+            app:layout_constraintVertical_bias="0.758">
+
+            <ImageView
+                android:id="@+id/accnt_start_date"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/baseline_date_range_24" />
+
+            <TextView
+                android:id="@+id/phone_txt"
+                android:layout_width="228dp"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="Account Start Date"
+                android:textColor="#131212" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="26dp"
+            android:background="#838CFE"
+            android:text="Edit Profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:id="@+id/include_one"
+        layout="@layout/activity_bottom_navigation"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
